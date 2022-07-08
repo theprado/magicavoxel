@@ -18,21 +18,34 @@ header {
     align-items: center;
     gap: 20px;
     padding: 30px;
-}    
+}   
 
 #cabecalho-menu {
     position: relative;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 50px;
+    gap: 70px;
 }
+
+#cabecalho-imagem{
+    position: relative;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 700;
+}
+
 #cabecalho-lista-menu{
     position: relative;
     display: flex;
     justify-content: space-around;
-    gap:24px;
-    top: 7px;
+    align-items: baseline;
+    gap: 24px;
 }
 
 #cabecalho-sociais{
@@ -54,9 +67,7 @@ header {
     
 }
 
-
 #texto {
-
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
@@ -66,8 +77,8 @@ color: white;
 
 
 #download-btn {
-    width: 342px;
-    height: 72px;
+    width: 330px;
+    height: 60px;
     background: #143AC4;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
     border-radius: 10px;
@@ -76,7 +87,7 @@ color: white;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 30px;
     transition: all .5s linear;
 }
 
@@ -128,27 +139,7 @@ color: white;
     align-items: center;
 }
 
-#noticias-card-1{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F9F9F9;
-    border-radius: 10px;
-    padding: 20px;
-    height: 600px;
-}
-
-#noticias-card-2{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F9F9F9;
-    border-radius: 10px;
-    padding: 20px;
-    height: 600px;
-}
-
-#noticias-card-3{
+#noticias-card-box{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -160,11 +151,11 @@ color: white;
 
 #noticias-card-texto{
     position: relative;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-gap: 320px;
-   padding: 20px;
-   top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 320px;
+    padding: 20px;
+    top: 50px;
 }
 
 #noticias-btn{
@@ -233,7 +224,7 @@ color: white;
 
 #btn-subscribe {
     width: 95px;
-    height: 48px;
+    height: 50px;
     background: #143AC4;
     border: none;
     color: white;
@@ -246,7 +237,7 @@ color: white;
  #input-subscribe {
     color: rgb(0, 0, 0);
     width: 265px;
-    height: 48px;
+    height: 30px;
     border: none;
     padding: 10px;
     }
@@ -341,4 +332,179 @@ footer {
     font-size: 14px;
     left: 100px;
     color: #00000065;
+}
+
+/* Download Page */ 
+
+#download-page *#download-btn{
+    width: 438px;
+    height: 72px;
+    background-color: #143AC4;
+    color: white;
+    font-size: 30px;
+}
+
+#download-page *#download-btn:hover{
+    width: 438px;
+    height: 72px;
+    background-color: white;
+    color: #143AC4;
+    font-size: 30px;
+}
+
+#previous-btn {
+    width: 250px;
+    height: 50px;
+    background: #0C216D;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    transition: all .5s linear;
+}
+
+#previous-btn:hover{
+    background-color: #ffffff;
+    color:#143AC4
+}
+
+/* Resources Page */
+
+#resources-page h2 {
+    color: #143AC4;
+}
+
+#recursos-lista{
+    display: flex;
+    gap: 12px;
+    padding: 20px;
+}
+
+#recursos-lista-item {
+    width: 164px;
+    height: 35px;
+    box-sizing: border-box;
+    border: 2px solid #143AC4;
+    border-radius: 50px;
+    color: #143AC4;
+    font-weight: 500;;
+    background-color:white;
+    transition: all .5s linear;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#recursos-tag {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 30px;
+    border-radius: 27px;
+    background-color: #171717;
+    color: white;
+    font-size: 15px;
+}
+
+#recursos-caixas-tutoriais {
+    padding: 30px;
+}
+
+#recursos-caixas-tutoriais-todas{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    padding: 5px;
+    gap: 30px;
+}
+
+#recursos-caixas-tutoriais-1 {
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    background-color: #143AC4;
+    width: 477px;
+    height: 186px;
+    display: grid;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px;
+}
+
+#recursos-caixas-tutoriais-1-box{
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 27.5px;
+    width: 118px;
+    height: 32px;
+    background-color: #171717;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#recursos-caixas-tutoriais-2 {
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    background-color: #143AC4;
+    width: 877px;
+    height: 186px;
+    display: grid;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px;
+}
+
+#recursos-caixas-tutoriais-3 {
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    background-color: #143AC4;
+    width: 477px;
+    height: 186px;
+    display: grid;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px;
+}
+
+#recursos-caixas-tutoriais-4 {
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.03);
+    background-color: #143AC4;
+    width: 477px;
+    height: 186px;
+    display: grid;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    padding: 20px;
 }
